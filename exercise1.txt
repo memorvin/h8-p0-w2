@@ -1,0 +1,96 @@
+1. Newton Second Law
+
+//Algorithm
+Step 1: Store "m" with 600 kg
+Step 2: Store "a" with 2 m/s2
+Step 3: Compute "F" as "m" times "a"
+Step 4: Display "F"
+
+//Pseudocode
+START
+SET m = 600 kg
+SET a = 2 m/s2
+COMPUTE F = m*a
+PRINT F
+END
+
+
+2. Tahun Kabisat
+
+//Algorithm
+Step 1: Read tahun "tahun"
+Step 2: If "tahun" mod 4 equals to 0 go to step 3, else go to step 6
+Step 3: If "tahun" mod 100 equals to 0 go to step 4, else go to step 5
+Step 4: If "tahun" mod 400 equals to 0 go to step 5, else go to step 6
+Step 5: Display "Tahun adalah kabisat."
+Step 6: Display "Tahun bukan kabisat."
+
+//Pseudocode
+START
+GET num tahun
+IF {tahun % 4 = 0;
+    IF {tahun % 100 = 0;
+        IF {tahun % 400 = 0;
+            PRINT "Tahun adalah kabisat."
+        ELSE PRINT "Tahun bukan kabisat."
+        }
+    ELSE
+        PRINT "Tahun adalah kabisat."
+    }
+ELSE
+    PRINT "Tahun bukan kabisat."
+}
+END IF
+END
+
+
+3. Laundry Law
+
+//Algorithm
+Step 1: Initialize "laundry" to 20
+Step 2: Initialize "counter" to 1
+Step 3: While "counter" less than "laundry"
+Step 4: Add 1 to "counter"
+Step 5: Back to step 3
+Step 6: Exit loop
+Step 7: Display "counter"
+
+//Pseudocode
+START
+SET laundry = 20
+SET counter = 1
+WHILE counter < laundry
+    DO counter++
+END WHILE
+Print counter
+END
+
+
+4. Periksa Kuku
+
+//Algorithm
+Step 1: Initialize "siswa" to 40
+Step 2: Initialize "counter" to 1
+Step 3: Initialize "kukuPanjang" as a boolean
+Step 4: While "counter" <= "siswa" 
+        Check "kukuPanjang"
+        If "kukuPanjang" is true, display "Mendapat hukuman dari guru"
+        Else display "Mendapat pujian dari guru"
+Step 6: Add 1 to "counter"
+Step 7: Back to step 4
+
+// Pseudocode
+START
+SET siswa = 40
+SET counter = 1
+SET kukuPanjang = ()
+WHILE counter <= siswa
+    Check kuku
+        IF kukuPanjang = true THEN
+            PRINT "Mendapat hukuman dari guru"
+        ELSE
+            PRINT "Mendapat pujian dari guru"
+        END IF
+    Counter++
+END WHILE
+END
