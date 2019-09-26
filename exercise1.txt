@@ -4,14 +4,14 @@
 Step 1: Store "m" with 600 kg
 Step 2: Store "a" with 2 m/s2
 Step 3: Compute "F" as "m" times "a"
-Step 4: Display "F"
+Step 4: Display "Resultan aya F"
 
 //Pseudocode
 START
-SET m = 600 kg
-SET a = 2 m/s2
+SET m = 600
+SET a = 2
 COMPUTE F = m*a
-PRINT F
+PRINT "Resultan gaya = " + F
 END
 
 
@@ -27,19 +27,17 @@ Step 6: Display "Tahun bukan kabisat."
 
 //Pseudocode
 START
-GET num tahun
-IF {tahun % 4 = 0;
-    IF {tahun % 100 = 0;
-        IF {tahun % 400 = 0;
+SET tahun = ()
+IF tahun % 4 == 0;
+    IF tahun % 100 == 0;
+        IF tahun % 400 == 0;
             PRINT "Tahun adalah kabisat."
-        ELSE PRINT "Tahun bukan kabisat."
-        }
+        ELSE
+            PRINT "Tahun bukan kabisat."
     ELSE
         PRINT "Tahun adalah kabisat."
-    }
 ELSE
     PRINT "Tahun bukan kabisat."
-}
 END IF
 END
 
@@ -48,21 +46,23 @@ END
 
 //Algorithm
 Step 1: Initialize "laundry" to 20
-Step 2: Initialize "counter" to 1
-Step 3: While "counter" less than "laundry"
-Step 4: Add 1 to "counter"
-Step 5: Back to step 3
-Step 6: Exit loop
-Step 7: Display "counter"
+Step 2: Initialize "counter" to 0
+Step 3: While "laundry" is bigger than 0
+Step 4: Increment "counter" by 1
+Step 5: Decrement "laundry" by 1
+Step 6: Back to step 3
+Step 7: Exit loop
+Step 8: Display "Jumlah pakaian: " + "counter"
 
 //Pseudocode
 START
 SET laundry = 20
-SET counter = 1
-WHILE counter < laundry
-    DO counter++
+SET counter = 0
+WHILE laundry > 0 DO
+    counter = counter + 1
+    laundry = laundry - 1
 END WHILE
-Print counter
+Print "Jumlah pakaian: " + counter
 END
 
 
@@ -91,6 +91,6 @@ WHILE counter <= siswa
         ELSE
             PRINT "Mendapat pujian dari guru"
         END IF
-    Counter++
+    Counter = counter + 1
 END WHILE
 END
