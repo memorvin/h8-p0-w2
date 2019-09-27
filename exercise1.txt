@@ -38,7 +38,7 @@ IF tahun % 4 == 0;
         PRINT "Tahun adalah kabisat."
 ELSE
     PRINT "Tahun bukan kabisat."
-END IF
+ENDIF
 END
 
 
@@ -61,7 +61,7 @@ SET counter = 0
 WHILE laundry > 0 DO
     counter = counter + 1
     laundry = laundry - 1
-END WHILE
+ENDWHILE
 Print "Jumlah pakaian: " + counter
 END
 
@@ -73,7 +73,6 @@ Step 1: Initialize "siswa" to 40
 Step 2: Initialize "counter" to 1
 Step 3: Initialize "kukuPanjang" as a boolean
 Step 4: While "counter" <= "siswa" 
-        Check "kukuPanjang"
         If "kukuPanjang" is true, display "Mendapat hukuman dari guru"
         Else display "Mendapat pujian dari guru"
 Step 6: Add 1 to "counter"
@@ -85,12 +84,11 @@ SET siswa = 40
 SET counter = 1
 SET kukuPanjang = ()
 WHILE counter <= siswa
-    Check kuku
-        IF kukuPanjang = true THEN
-            PRINT "Mendapat hukuman dari guru"
-        ELSE
-            PRINT "Mendapat pujian dari guru"
-        END IF
+    IF kukuPanjang = true THEN
+        PRINT "Mendapat hukuman dari guru"
+    ELSE
+        PRINT "Mendapat pujian dari guru"
+    END IF
     Counter = counter + 1
-END WHILE
+ENDWHILE
 END
